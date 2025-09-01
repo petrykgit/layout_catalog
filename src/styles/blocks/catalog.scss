@@ -1,5 +1,5 @@
 .catalog {
-  $column-count: 1;
+  --column-count: 1;
 
   box-sizing: border-box;
   padding: $catalog-padding-vert $catalog-padding-hor;
@@ -7,6 +7,7 @@
   grid-template-columns: repeat(var(--column-count), $card-width);
   gap: $catalog-row-gap $catalog-column-gap;
   justify-content: center;
+  overflow: visible;
 }
 
 @media (min-width: 488px) {
